@@ -5,7 +5,9 @@ import java.util.*;
 public class Main {
     public static List<Integer> findCompletePrefixes(List<String> names, List<String> query) {
         List<Integer> prefixCounterList = new ArrayList<>();
-
+        System.out.println(names.toString()/*.length()*/);
+//        if (names.size() >= 1 && names.size() <= 20000 &&
+//                query.size() >= 1 && query.size() <= 200)
         int counter = 0;
         boolean isFound = false;
         for (int i = 0; i < query.size(); i++) {
@@ -31,9 +33,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        System.out.println(findCompletePrefixes(Arrays.asList("jackson", "jacques", "jack"), Arrays.asList("jack"))); // 1
+        System.out.println(findCompletePrefixes(Arrays.asList("jackson", "jacques", "jack"), Arrays.asList("jack"))); // 1
 //        System.out.println(findCompletePrefixes(Arrays.asList("jackson", "jacques", "jackovi", "jack"), Collections.singletonList("jack"))); // 2
 //        System.out.println(findCompletePrefixes(Arrays.asList("jackson", "jacques", "alexia", "jackovi", "alezander", "jack", "ale", "alexander"), Arrays.asList("jack", "ale"))); // 2 3
-        System.out.println(findCompletePrefixes(Arrays.asList("steve", "stevens", "danny", "steves", "dan", "john", "johnny", "joe", "alex", "alexander"), Arrays.asList("steve", "alex", "joe", "john", "dan"))); // 2 1 0 1 1
+//        System.out.println(findCompletePrefixes(Arrays.asList("steve", "stevens", "danny", "steves", "dan", "john", "johnny", "joe", "alex", "alexander"), Arrays.asList("steve", "alex", "joe", "john", "dan"))); // 2 1 0 1 1
     }
 }

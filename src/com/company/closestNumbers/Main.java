@@ -87,10 +87,8 @@ public class Main {
                 counterForRemovingTrailing0s++;
             }
         }
-        System.out.println(counterForRemovingTrailing0s);
         int[] arrayWithoutTrailing0s = new int[counterForRemovingTrailing0s];
         if (parsedArray[counter * 2 - 1] == 0) {
-            System.out.println(counterForRemovingTrailing0s);
             for (int i = 0; i < counterForRemovingTrailing0s; i++)
                 arrayWithoutTrailing0s[i] = parsedArray[i];
             return arrayWithoutTrailing0s;
@@ -110,10 +108,10 @@ public class Main {
 //        showArray(sortArrayWPosInts(arr3));
 //        System.out.println(getMinDiff(sortArrayWPosInts(arr1)));
 //        System.out.println(getMinDiff(sortArrayWPosInts(arr3)));
-        showArray(sortArrayWRealNums(arr4));
+//        showArray(sortArrayWRealNums(arr4));
 //        showArray(makeNumsAbsolute(arr4));
 //        System.out.println(getMinDiff(sortArrayWRealNums(arr4)));
-//        showArray(getNumsSeparatedByMinDiff(sortArrayWPosInts(arr1)));
+        showArray(getNumsSeparatedByMinDiff(sortArrayWPosInts(arr1)));
 //        showArray(getNumsSeparatedByMinDiff(sortArrayWPosInts(arr2)));
 //        showArray(getNumsSeparatedByMinDiff(sortArrayWPosInts(arr3)));
 //        showArray(getNumsSeparatedByMinDiff(sortArrayWRealNums(arr4)));
